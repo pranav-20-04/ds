@@ -1,0 +1,5 @@
+//to run use and generate Client Stub And Server Skeleton : idlj -fall Calculator.idl
+//compile all the java files : javac *.java 
+//kepp orb running : orbd -ORBInitialPort 1050
+//start server : java CalculatorServer -ORBInitialPort 1050 -ORBInitialHost localhost
+//start client : java CalculatorClient -ORBInitialPort 1050 -ORBInitialHost localhost

@@ -1,0 +1,9 @@
+module CalculatorApp
+{
+    interface Calculator
+    {
+        long add(in long a, in long b);
+        long sub(in long a, in long b);
+    };
+};
+

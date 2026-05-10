@@ -1,0 +1,10 @@
+module OddEvenApp
+{
+    interface OddEven
+    {
+        string check(in long n);
+    };
+};
+
+
+//run karo: idlj -fall OddEven.idl

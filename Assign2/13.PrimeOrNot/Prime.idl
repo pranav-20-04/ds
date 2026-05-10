@@ -1,0 +1,11 @@
+module PrimeApp
+{
+    interface Prime
+    {
+        string checkPrime(in long n);
+    };
+};
+
+
+
+//to generate stub and skeleton use : idlj -fall Prime.idl

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup Client</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            width: 350px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+        }
+
+        h2{
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        input[type=text],
+        input[type=password]{
+
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            margin-bottom: 18px;
+
+            border: 1px solid #ccc;
+            border-radius: 5px;
+
+            box-sizing: border-box;
+        }
+
+        input[type=submit]{
+
+            width: 100%;
+            padding: 12px;
+
+            border: none;
+            border-radius: 5px;
+
+            background: #4facfe;
+            color: white;
+
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover{
+
+            background: #008cdd;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Signup Form</h2>
+
+    <form action="http://localhost:8080/SignupServer/signup"
+          method="post">
+
+        Username:
+        <input type="text" name="username">
+
+        Password:
+        <input type="password" name="password">
+
+        Email:
+        <input type="text" name="email">
+
+        <input type="submit" value="Signup">
+
+    </form>
+
+</div>
+
+</body>
+</html>

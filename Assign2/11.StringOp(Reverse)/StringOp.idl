@@ -1,0 +1,10 @@
+module StringApp
+{
+    interface StringOperation
+    {
+        string reverse(in string str);
+    };
+};
+
+
+//to run use : idlj -fall StringOp.idl
