@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class TokenRing {
@@ -25,12 +24,24 @@ public class TokenRing {
             System.out.print("\nEnter Sender (-1 to Exit): ");
             int sender = scanner.nextInt();
 
+            // FIXED
             if (sender == -1) {
                 break;
             }
 
+            if (sender < 0 || sender >= numberOfNode) {
+                System.out.println("Enter Valid Sender Between 0 & " + (numberOfNode - 1));
+                continue;
+            }
+
             System.out.print("Enter Receiver: ");
             int receiver = scanner.nextInt();
+
+            // FIXED
+            if (receiver < 0 || receiver >= numberOfNode) {
+                System.out.println("Enter Valid Receiver Between 0 & " + (numberOfNode - 1));
+                continue;
+            }
 
             System.out.print("Enter Data To Send: ");
             int data = scanner.nextInt();
