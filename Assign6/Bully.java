@@ -28,7 +28,7 @@ public class Bully {
             }
         }
 
-        if (processes[coordinator - 1]) {
+        if (coordinator != -1 && processes[coordinator - 1]) {
             System.out.println("Process P" + coordinator + " is the coordinator");
         } else {
             System.out.println("No valid coordinator (run election)");
